@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AN AGRICULTURAL  APP</title>
+  <meta charset="utf-8">
+  <meta name="description" content="AN AGRICULTURAL  APP">
+  <meta name="author" content="">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>AN AGRICULTURAL  APP</h1>
+    <h2>Developing Data Products Course Work Presentation</h2>
+    <p><br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>BACKGROUND</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Agriculture is an essential activity for human survival.It provides us food, clothing, biofuel, and others products.
+    A farm can be considered as a system of production in which there are many interactions between soil-plant-atmosphere.</p>
+
+<p>Some of the inputs required in the system are water, fertilizers, and solar radiation.
+Not all the inputs are renewable, such as fertilizers. This implies that scarcer the source more expensive it is.
+Sustainability is an important issue in agriculture. To achieve a sustainable production, the production system should provide benefits for the economy, society, and environment. Wisely use of inputs in the system aids to a more sustainable agriculture.</p>
+
+<p>Click to view APP: <a href="http://evangel.shinyapps.io/agricutural/">http://evangel.shinyapps.io/agricutural/</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>FIELDPRINT GRAPH APP</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li><p>The Fieldprint Graph is an app that plots a variety of sustainable indicators that summarizes a production system 
+performance in comparison with an average production system.</p></li>
+<li><p>The app was based on a pre-existent webtool called Field to Market.</p></li>
+<li><p>The sustainable indicators are: energy consumption, soil conservation, emmissions, biodiversity, water use, land 
+use, and resource consumption.</p></li>
+<li><p>The app can help farmers to identify areas they could prioritize investments to improve their production system.</p></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How the App Works</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>The user needs to input the indexes for each one of the sustainable indicators. The indexes calculations will be 
+developed in the future based on raw information.</li>
+<li>The graph is rendered according to the user input</li>
+<li>If an indicator is below the average (red dotted line), it should be given priority to be improved.The higher the 
+sustainable indexes the better.</li>
+</ol>
+
+<p>Note: even though the app uses the user inputs, there are calculations in the function built to plot the graph.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How it Looks</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">source(&quot;radar.R&quot;)
+values &lt;- data.frame(0.4, 0.7, 0.7, 0.8, 0.2, 0.5, 0.5, 0.5)
+names(values) = c(&quot;Energy&quot;,&quot;Soil&quot;,&quot;Emmissions&quot;,&quot;Biodiversity&quot;,&quot;Water&quot;,&quot;Land&quot;,&quot;Resource&quot;,&quot;Ecotoxity&quot;)
+webplot(values, col=&quot;darkgreen&quot;)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='BACKGROUND'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='FIELDPRINT GRAPH APP'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How the App Works'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='How it Looks'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
